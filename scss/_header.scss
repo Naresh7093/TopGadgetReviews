@@ -1,0 +1,47 @@
+@use "variables";
+@use "mixins";
+
+header {
+  @include mixins.flex-layout(space-between);
+  padding: 20px;
+  background-color: variables.$primary-color;
+  color: variables.$text-color-light;
+  box-shadow: variables.$shadow-light;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: variables.$text-color-light;
+    flex: 1;
+  }
+  nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+      @include mixins.flex-layout(row, center);
+      list-style: none;
+      gap: 20px;
+      margin: 0;
+      padding-right: 40px;
+
+      li {
+        a {
+          color: variables.$text-color-dark;
+          text-decoration: none;
+          font-size: 1.1em;
+          padding: 5px 10px;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: variables.$secondary-color;
+          }
+        }
+      }
+    }
+  }
+}

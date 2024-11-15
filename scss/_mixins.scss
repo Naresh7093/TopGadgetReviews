@@ -1,0 +1,32 @@
+@use "variables";
+@use "sass:color";
+@mixin btn-style($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: variables.$btn-border-radius;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: color.adjust($bg-color, $lightness: -10%);
+  }
+}
+@mixin card-style($bg-color, $shadow, $radius) {
+  background-color: $bg-color;
+  padding: 20px;
+  margin: 15px;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  &:hover {
+    box-shadow: variables.$shadow-hover;
+    transform: scale(1.05);
+  }
+}
+
+@mixin flex-layout($justify: flex-start, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
