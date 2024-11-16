@@ -1,11 +1,15 @@
-$primary-color: #007bff;
-$secondary-color: #f8f8f8;
-$background-gradient: linear-gradient(135deg, #3f87a6, #ebf2f7);
-$text-color-light: #fff;
-$text-color-dark: #333;
-$text-color-muted: #666;
+$primary-color: #0d1b2a;
+$accent-color: #00c7c7;
+$secondary-color: #153e7c;
+$text-color-dark: #333333;
+$text-color-light: #e0e1dd;
+$text-color-muted: #a6a8b0;
+$background-gradient: linear-gradient(180deg, #0d1b2a, #1b263b);
+$glass-background: rgba(255, 255, 255, 0.1);
 $font-family: "Arial", sans-serif;
+
+// Shadows and Effects
+$shadow-light: 0 4px 10px rgba(0, 199, 199, 0.3);
+$shadow-hover: 0 8px 16px rgba(0, 199, 199, 0.5);
+$card-radius: 12px;
 $btn-border-radius: 25px;
-$card-radius: 10px;
-$shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
-$shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.2);

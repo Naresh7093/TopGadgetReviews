@@ -1,6 +1,7 @@
 @use "variables";
 @use "mixins";
 @use "header";
+
 /* Global Styles */
 body {
   margin: 0;
@@ -62,12 +63,12 @@ h3 {
 }
 #featured-reviews h2 {
   font-size: 2.5em;
-  color: variables.$text-color-dark;
+  color: variables.$text-color-light;
   margin-bottom: 30px;
 }
 .review-card {
   @include mixins.card-style(
-    #fff,
+    variables.$glass-background,
     variables.$shadow-light,
     variables.$card-radius
   );
@@ -81,7 +82,7 @@ h3 {
 
   h3 {
     font-size: 2em;
-    color: variables.$text-color-dark;
+    color: variables.$text-color-light;
     margin-bottom: 10px;
   }
 
@@ -96,22 +97,13 @@ h3 {
       variables.$primary-color,
       variables.$text-color-light
     );
-    padding: 10px 20px;
-    font-size: 1.1em;
-    text-transform: uppercase; // Make the button text uppercase for consistency
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: variables.$secondary-color;
-      color: variables.$primary-color;
-    }
   }
   &:hover {
     box-shadow: variables.$shadow-hover;
     transform: scale(1.05); // Slightly zoom-in effect on hover
   }
 }
+
 @media screen and (max-width: 768px) {
   #featured-reviews {
     padding: 30px 15px;
@@ -126,6 +118,10 @@ h3 {
   }
 }
 #categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   padding: 80px 20px;
   background-color: variables.$secondary-color;
@@ -133,12 +129,15 @@ h3 {
 
   h2 {
     font-size: 2.5em;
-    color: variables.$text-color-dark;
+    color: variables.$text-color-light;
     margin-bottom: 40px;
   }
 
   ul {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(
       auto-fill,
       minmax(250px, 1fr)
@@ -148,7 +147,7 @@ h3 {
     padding: 0;
 
     li {
-      background-color: #fff;
+      background-color: #ffffff63;
       padding: 30px;
       border-radius: variables.$card-radius;
       box-shadow: variables.$shadow-light;
@@ -163,7 +162,7 @@ h3 {
       a {
         display: block;
         font-size: 1.2em;
-        color: variables.$text-color-dark;
+        color: variables.$text-color-light;
         text-decoration: none;
         font-weight: bold;
         margin-top: 20px;
@@ -176,6 +175,7 @@ h3 {
     }
   }
 }
+
 footer {
   padding: 20px;
   background-color: variables.$primary-color;
