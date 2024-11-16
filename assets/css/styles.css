@@ -85,11 +85,14 @@ h3 {
   padding: 12px 25px;
   text-decoration: none;
   font-size: 1.2em;
+  border: 1px solid;
+  border-color: #00c7c7;
   border-radius: 25px;
   transition: background-color 0.3s ease;
 }
 #hero .btn:hover {
   background-color: rgb(0.9454545455, 1.9636363636, 3.0545454545);
+  background-color: transparent;
 }
 
 /* Featured Reviews Section */
@@ -143,11 +146,14 @@ h3 {
   padding: 12px 25px;
   text-decoration: none;
   font-size: 1.2em;
+  border: 1px solid;
+  border-color: #00c7c7;
   border-radius: 25px;
   transition: background-color 0.3s ease;
 }
 .review-card .btn:hover {
   background-color: rgb(0.9454545455, 1.9636363636, 3.0545454545);
+  background-color: transparent;
 }
 .review-card:hover {
   box-shadow: 0 8px 16px rgba(0, 199, 199, 0.5);
