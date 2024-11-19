@@ -11,10 +11,12 @@
   border: 1px solid;
   border-color: variables.$accent-color;
   border-radius: variables.$btn-border-radius;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   &:hover {
     background-color: color.adjust($bg-color, $lightness: -10%);
+    color: variables.$text-color-light;
     background-color: transparent;
+    border-color: variables.$accent-color;
   }
 }
 
