@@ -1,6 +1,7 @@
 @use "variables";
 @use "sass:color";
 
+//button style mixin
 @mixin btn-style($bg-color, $text-color) {
   background-color: $bg-color;
   color: $text-color;
@@ -17,23 +18,24 @@
   }
 }
 
+//Card Style Mixin
 @mixin card-style($bg-color, $shadow, $radius) {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
-
   padding: 20px;
   margin: 15px;
   border-radius: $radius;
   box-shadow: $shadow, 0 8px 32px #00000033;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0, 3s ease;
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
   }
 }
 
+//flex layout Mixin
 @mixin flex-layout($justify: flex-start, $align: center) {
   display: flex;
   justify-content: $justify;
