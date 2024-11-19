@@ -1,0 +1,64 @@
+@use "variables";
+@use "mixins";
+#blog {
+  background-color: variables.$secondary-color; // Assuming $secondary-color works for the blog background
+  padding: 60px 20px;
+  text-align: center;
+
+  h2 {
+    color: variables.$text-color-light;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .blog-grid {
+    @include mixins.flex-layout(space-between, center);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .blog-card {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.25
+    ); // Assuming $card-bg-color for the card's background
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: variables.$shadow-light;
+    text-align: left;
+    transition: transform 0.3s ease;
+
+    h3 {
+      color: variables.$accent-color;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: variables.$text-color-light;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      @include mixins.btn-style(
+        variables.$accent-color,
+        variables.$text-color-dark
+      );
+
+      &:hover {
+        background-color: transparent; // Assuming $hover-color for the button hover state
+      }
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

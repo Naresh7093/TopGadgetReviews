@@ -1,0 +1,83 @@
+@use "variables";
+@use "mixins";
+#contact {
+  background: variables.$background-gradient;
+  color: variables.$text-color-light;
+  padding: 50px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: variables.$text-color-light;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: variables.$glass-background;
+    padding: 30px;
+    padding-right: 50px;
+    border-radius: variables.$card-radius;
+    box-shadow: variables.$shadow-light;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      gap: 20px;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        label {
+          font-size: 1.1em;
+          margin-bottom: 10px;
+          color: variables.$text-color-light;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          height: 50px;
+          padding: 12px;
+          font-size: 1em;
+          border: 1px solid variables.$text-color-muted;
+          border-radius: variables.$card-radius;
+          background-color: variables.$glass-background;
+          color: variables.$text-color-light;
+          transition: border-color 0.3s ease;
+
+          &:focus {
+            border-color: variables.$accent-color;
+            outline: none;
+          }
+        }
+
+        textarea {
+          border-radius: 30px;
+          resize: vertical;
+          height: 150px;
+        }
+      }
+
+      .submit-btn {
+        @include mixins.btn-style(
+          variables.$accent-color,
+          variables.$text-color-dark
+        );
+        text-align: center;
+        width: 200px;
+        font-size: 1.2em;
+        padding: 15px;
+        cursor: pointer;
+        border: none;
+        border-radius: variables.$btn-border-radius;
+      }
+    }
+  }
+}

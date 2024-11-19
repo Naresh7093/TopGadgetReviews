@@ -65,11 +65,11 @@
         </div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="reviews/redmi-note-9-pro-review.html">Reviews</a></li>
-          <li><a href="blog/index.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="careers.html">Careers</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#featured-reviews">Reviews</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -104,6 +104,119 @@
         <li><a href="#">Accessories</a></li>
       </ul>
     </section>
+    <section id="blog">
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <h3>Understanding Smart Home Devices</h3>
+          <p>
+            Dive into the world of smart home technology and explore how devices
+            can make your life easier.
+          </p>
+          <a href="blog/smart-home-devices.html" class="btn">Read More</a>
+        </article>
+        <article class="blog-card">
+          <h3>The Evolution of Smartphones</h3>
+          <p>
+            Discover how smartphones have transformed over the years to become
+            indispensable tools in our lives.
+          </p>
+          <a href="blog/smartphone-evolution.html" class="btn">Read More</a>
+        </article>
+        <article class="blog-card">
+          <h3>Top 5 Laptop Picks for 2024</h3>
+          <p>
+            Check out our top recommendations for laptops in 2024, tailored for
+            different needs and budgets.
+          </p>
+          <a href="blog/top-laptops-2024.html" class="btn">Read More</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <p>
+          Welcome to Top Gadget Reviews, your go-to source for the latest
+          reviews, buying guides, and news on the best tech gadgets. Our mission
+          is to help consumers make informed purchasing decisions with honest,
+          in-depth reviews.
+        </p>
+        <div class="about-image">
+          <img src="assets/images/about-us.jpg" alt="About Us" />
+        </div>
+      </div>
+      <a href="#contact" class="btn">Get In Touch</a>
+    </section>
+    <section id="careers">
+      <h2>Join Our Team</h2>
+      <div class="careers-content">
+        <p>
+          We’re always looking for talented individuals to join our growing
+          team. If you're passionate about tech, innovation, and making a
+          difference, explore our current job openings and get in touch.
+        </p>
+        <div class="career-card">
+          <h3>Content Writer</h3>
+          <p>
+            Looking for a skilled writer to produce high-quality content about
+            the latest tech gadgets and industry trends.
+          </p>
+          <a href="#apply" class="btn">Apply Now</a>
+        </div>
+        <div class="career-card">
+          <h3>Web Developer</h3>
+          <p>
+            Join our development team to help build and maintain our website and
+            optimize user experience.
+          </p>
+          <a href="#apply" class="btn">Apply Now</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
     <script src="assets/js/main.js"></script>
     <footer>
       <div class="footer-content">
@@ -116,10 +229,10 @@
             <ul>
               <li><a href="index.html">Home</a></li>
               <li>
-                <a href="reviews/redmi-note-9-pro-review.html">Reviews</a>
+                <a href="#featured-reviews">Reviews</a>
               </li>
-              <li><a href="blog/index.html">Blog</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#about">About</a></li>
             </ul>
           </div>
           <div class="footer-nav">
@@ -134,8 +247,8 @@
           <div class="footer-nav">
             <h4>Legal</h4>
             <ul>
-              <li><a href="careers.html">Careers</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>

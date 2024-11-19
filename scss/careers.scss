@@ -1,0 +1,59 @@
+@use "variables";
+@use "mixins";
+
+#careers {
+  background-color: variables.$secondary-color;
+  color: variables.$text-color-light;
+  padding: 60px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    color: variables.$text-color-light;
+    margin-bottom: 40px;
+  }
+
+  .careers-content {
+    @include mixins.flex-layout(space-between, flex-start);
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    p {
+      font-size: 1.2rem;
+      color: variables.$text-color-light;
+      width: 100%;
+      margin-bottom: 40px;
+      line-height: 1.8;
+    }
+
+    .career-card {
+      @include mixins.card-style(
+        variables.$glass-background,
+        variables.$shadow-light,
+        variables.$card-radius
+      );
+      width: 45%;
+      margin: 15px;
+
+      h3 {
+        font-size: 1.8rem;
+        color: variables.$accent-color;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: variables.$text-color-muted;
+        margin-bottom: 20px;
+      }
+
+      .btn {
+        @include mixins.btn-style(
+          variables.$accent-color,
+          variables.$text-color-light
+        );
+      }
+    }
+  }
+}

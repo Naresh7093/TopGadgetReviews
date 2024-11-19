@@ -1,0 +1,62 @@
+@use "variables";
+@use "mixins";
+
+#about {
+  background: variables.$background-gradient; // Using the gradient from variables
+  color: variables.$text-color-light;
+  padding: 60px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    color: variables.$text-color-light;
+    margin-bottom: 40px;
+  }
+
+  .about-content {
+    @include mixins.flex-layout(
+      space-between,
+      center
+    ); // Flex layout for aligning text and image
+    flex-wrap: wrap; // Ensures responsiveness
+    max-width: 1200px;
+    margin: 0 auto;
+
+    p {
+      font-size: 1.2rem;
+      color: variables.$text-color-light;
+      width: 50%;
+      line-height: 1.8;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .about-image {
+      width: 45%;
+      text-align: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: variables.$card-radius; // Using the defined card radius
+        box-shadow: variables.$shadow-light; // Using the defined light shadow
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .btn {
+    @include mixins.btn-style(
+      variables.$accent-color,
+      variables.$text-color-light
+    ); // Using btn-style mixin
+    margin-top: 30px;
+  }
+}

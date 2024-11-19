@@ -138,6 +138,288 @@ header .hamburger {
     transform-origin: 0%;
   }
 }
+#blog {
+  background-color: #153e7c;
+  padding: 60px 20px;
+  text-align: center;
+}
+#blog h2 {
+  color: #e0e1dd;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+#blog .blog-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#blog .blog-card {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 199, 199, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+#blog .blog-card h3 {
+  color: #00c7c7;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+#blog .blog-card p {
+  color: #e0e1dd;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+#blog .blog-card .btn {
+  background-color: #00c7c7;
+  color: #333333;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 1px solid;
+  border-color: #00c7c7;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#blog .blog-card .btn:hover {
+  background-color: #009494;
+  color: #e0e1dd;
+  background-color: transparent;
+  border-color: #00c7c7;
+}
+#blog .blog-card .btn:hover {
+  background-color: transparent;
+}
+#blog .blog-card:hover {
+  transform: translateY(-5px);
+}
+
+#about {
+  background: linear-gradient(180deg, #0d1b2a, #1b263b);
+  color: #e0e1dd;
+  padding: 60px 20px;
+  text-align: center;
+}
+#about h2 {
+  font-size: 2.5rem;
+  color: #e0e1dd;
+  margin-bottom: 40px;
+}
+#about .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#about .about-content p {
+  font-size: 1.2rem;
+  color: #e0e1dd;
+  width: 50%;
+  line-height: 1.8;
+}
+@media screen and (max-width: 768px) {
+  #about .about-content p {
+    width: 100%;
+    text-align: center;
+  }
+}
+#about .about-content .about-image {
+  width: 45%;
+  text-align: center;
+}
+#about .about-content .about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 199, 199, 0.3);
+}
+@media screen and (max-width: 768px) {
+  #about .about-content .about-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+#about .btn {
+  background-color: #00c7c7;
+  color: #e0e1dd;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 1px solid;
+  border-color: #00c7c7;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 30px;
+}
+#about .btn:hover {
+  background-color: #009494;
+  color: #e0e1dd;
+  background-color: transparent;
+  border-color: #00c7c7;
+}
+
+#careers {
+  background-color: #153e7c;
+  color: #e0e1dd;
+  padding: 60px 20px;
+  text-align: center;
+}
+#careers h2 {
+  font-size: 2.5rem;
+  color: #e0e1dd;
+  margin-bottom: 40px;
+}
+#careers .careers-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#careers .careers-content p {
+  font-size: 1.2rem;
+  color: #e0e1dd;
+  width: 100%;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+#careers .careers-content .career-card {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 199, 199, 0.3), 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease, transform 0, 3s ease;
+  width: 45%;
+  margin: 15px;
+}
+#careers .careers-content .career-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+#careers .careers-content .career-card h3 {
+  font-size: 1.8rem;
+  color: #00c7c7;
+  margin-bottom: 10px;
+}
+#careers .careers-content .career-card p {
+  font-size: 1rem;
+  color: #a6a8b0;
+  margin-bottom: 20px;
+}
+#careers .careers-content .career-card .btn {
+  background-color: #00c7c7;
+  color: #e0e1dd;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 1px solid;
+  border-color: #00c7c7;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#careers .careers-content .career-card .btn:hover {
+  background-color: #009494;
+  color: #e0e1dd;
+  background-color: transparent;
+  border-color: #00c7c7;
+}
+
+#contact {
+  background: linear-gradient(180deg, #0d1b2a, #1b263b);
+  color: #e0e1dd;
+  padding: 50px 20px;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #e0e1dd;
+}
+#contact .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  padding-right: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 199, 199, 0.3);
+}
+#contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+#contact .contact-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#contact .contact-form form .form-group label {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #e0e1dd;
+}
+#contact .contact-form form .form-group input,
+#contact .contact-form form .form-group textarea {
+  width: 100%;
+  height: 50px;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #a6a8b0;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e0e1dd;
+  transition: border-color 0.3s ease;
+}
+#contact .contact-form form .form-group input:focus,
+#contact .contact-form form .form-group textarea:focus {
+  border-color: #00c7c7;
+  outline: none;
+}
+#contact .contact-form form .form-group textarea {
+  border-radius: 30px;
+  resize: vertical;
+  height: 150px;
+}
+#contact .contact-form form .submit-btn {
+  background-color: #00c7c7;
+  color: #333333;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 1px solid;
+  border-color: #00c7c7;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: center;
+  width: 200px;
+  font-size: 1.2em;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+}
+#contact .contact-form form .submit-btn:hover {
+  background-color: #009494;
+  color: #e0e1dd;
+  background-color: transparent;
+  border-color: #00c7c7;
+}
+
 /* Global Styles */
 html,
 body {
