@@ -13,12 +13,16 @@ body {
   font-family: variables.$font-family;
 }
 #hero {
-  background: linear-gradient(
+  background-image: linear-gradient(
     135deg,
-    variables.$primary-color,
-    variables.$secondary-color,
-    variables.$primary-color
+    rgba(variables.$primary-color, 1),
+    rgba(variables.$secondary-color, 1),
+    rgba(variables.$primary-color, 1)
   );
+
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,16 +31,16 @@ body {
   text-align: center;
   color: variables.$text-color-light;
   font-family: variables.$font-family;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgba(0, 0, 0, 0.3);
+  //   z-index: 1;
+  // }
 
   //Hero heading
   h2 {
@@ -61,18 +65,18 @@ body {
     position: relative;
     z-index: 2;
   }
-  &:hover {
-    box-shadow: variables.$shadow-hover;
-    transform: scale(1.05); // Slightly zoom-in effect on hover
-  }
+  // &:hover {
+  //   box-shadow: variables.$shadow-hover;
+  //   transform: scale(1.05); // Slightly zoom-in effect on hover
+  // }
 }
 
 #featured-reviews {
   background: linear-gradient(
-    35deg,
-    variables.$primary-color,
+    40deg,
+    variables.$glass-background,
     variables.$secondary-color,
-    variables.$primary-color
+    variables.$glass-background
   );
 
   width: 100%;
@@ -93,12 +97,14 @@ body {
     background-color: rgba(255, 255, 255, 0.25);
     // backdrop-filter: blur(5px);
     // -webkit-backdrop-filter: blur(5px);
-    padding: 20px;
-    padding-bottom: 50px;
+    // padding: 20px;
+    margin: 10px;
+    padding-bottom: 20px;
     border-radius: variables.$card-radius;
     box-shadow: variables.$shadow-light;
     border: 1px solid rgba(255, 255, 255, 0.25);
     width: 80%;
+    overflow-y: hidden;
     max-width: 500px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     text-align: center;

@@ -18,9 +18,11 @@
       space-between,
       center
     ); // Flex layout for aligning text and image
+
     flex-wrap: wrap; // Ensures responsiveness
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 40px;
 
     p {
       font-size: 1.2rem;
@@ -35,7 +37,8 @@
     }
 
     .about-image {
-      width: 45%;
+      width: 30%;
+
       text-align: center;
 
       img {
@@ -58,5 +61,11 @@
       variables.$text-color-light
     ); // Using btn-style mixin
     margin-top: 30px;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: left;
+    // align-items: left;
+    // width: 12%;
+    // margin-left: 20%;
   }
 }
